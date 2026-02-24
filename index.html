@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App | Satyam</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Search Section -->
+  <div class="search">
+    <input type="text" id="cityInput" placeholder="Enter city name" />
+    <button id="getWeatherBtn">Get Weather</button>
+    <button id="saveCityBtn">Save City</button>
+  </div>
+
+  <p class="current-status"></p>
+  <p class="error"></p>
+  <p class="loading"></p>
+
+  <!-- Weather Card -->
+  <div class="card">
+    <img src="" alt="weather icon" id="image" />
+    <p class="temperature"></p>
+    <p class="day"></p>
+    <p class="weather"></p>
+  </div>
+
+  <!-- Details -->
+  <div class="details">
+    <div class="box">
+      <img src="https://img.icons8.com/?size=100&id=dmyNanhX1Hbx&format=png&color=000000" alt="" />
+      <p>Wind</p>
+      <p class="wind">km/h</p>
+    </div>
+
+    <div class="box">
+      <img src="https://img.icons8.com/?size=100&id=19395&format=png&color=000000" alt="" />
+      <p>Humidity</p>
+      <p class="humidity">%</p>
+    </div>
+  </div>
+
+  <!-- Axios library for API requests -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <!-- App Script -->
+  <script src="app.js"></script>
+</body>
+
+</html>
