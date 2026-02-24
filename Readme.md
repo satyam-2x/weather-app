@@ -7,7 +7,7 @@ Built to deliver accurate data with a clean and user-friendly interface.
 
 ## 🚀 Live Demo
 
-🔗 [View Live Project](https://your-live-link.com)
+🔗 [View Live Project](https://satyam-2x.github.io/weather-app/)
 
 ---
 
