@@ -118,7 +118,7 @@ function filteredWeather(data) {
 // WEATHER API CALL FUNCTION
 async function weather(city) {
   try {
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&units=metric&APPID=8e681c7e1f2fd2517003d1f709e9ebfe`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&units=metric&appid=8e681c7e1f2fd2517003d1f709e9ebfe`;
     let res = await axios.get(url);
     return res.data;
   } catch {
