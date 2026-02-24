@@ -32,7 +32,27 @@ window.addEventListener("load", async () => {
 
 
 // GET WEATHER BUTTON CLICK
-getBtn.addEventListener("click", async () => {
+// getBtn.addEventListener("click", async () => {
+//   let input = cityInput.value.trim();
+
+//   if (input === "") {
+//     errorEl.innerText = "please enter a city name";
+//     return;
+//   }
+
+//   loadingEl.innerText = "Loading...";
+//   let data = await weather(input);
+
+//   if (data) {
+//     filteredWeather(data);
+//     currentCity = input;
+//     statusEl.innerHTML = `Weather in <span>${input}</span>`;
+//   }
+// });
+
+getBtn.addEventListener("click", async (e) => {
+  e.preventDefault();
+
   let input = cityInput.value.trim();
 
   if (input === "") {
@@ -49,7 +69,6 @@ getBtn.addEventListener("click", async () => {
     statusEl.innerHTML = `Weather in <span>${input}</span>`;
   }
 });
-
 
 // SAVE CITY TO LOCAL STORAGE
 saveBtn.addEventListener("click", () => {
